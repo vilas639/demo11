@@ -58,7 +58,13 @@ public class Demo1Controller {
     }
     
     
-    public void getoffers()
+    public void getoffers(@RequestBody Person person,
+    		@RequestHeader(name="clientid", required = false) String clinetid,
+    		@RequestHeader(name="channelid", required = false) String channelid,
+    		@RequestHeader(name="timstp", required = false) String timstp,
+    		@RequestHeader(name="corelationid", required = false) String corelationid,
+    		@RequestHeader(name="token", required = false) String authtoken
+    		)
     {
     	System.out.println("welcome");
     	
