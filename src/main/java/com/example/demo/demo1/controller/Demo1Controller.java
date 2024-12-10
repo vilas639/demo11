@@ -60,6 +60,7 @@ public class Demo1Controller {
     
     public void getoffers()
     {
+    	System.out.println("welcome");
     	
     }
     
